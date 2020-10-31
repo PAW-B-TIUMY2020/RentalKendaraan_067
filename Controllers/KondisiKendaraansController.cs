@@ -18,6 +18,10 @@ namespace RentalKendaraan_20180140067.Controllers
             _context = context;
         }
 
+        //Create data
+        // Delete data
+        // Details data
+        // Edit data
         // GET: KondisiKendaraans
         public async Task<IActionResult> Index()
         {
