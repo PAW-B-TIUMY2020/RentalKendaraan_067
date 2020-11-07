@@ -15,11 +15,13 @@ namespace RentalKendaraan_20180140067.Models
         [Required(ErrorMessage = "Nama Customer tidak boleh kosong")]
         public string NamaCustomer { get; set; }
         [RegularExpression("[0-9*$", ErrorMessage = "hanya boleh diisi oleh angka")]
+        [Required(ErrorMessage = "Nik tidak boleh kosong")]
         public string Nik { get; set; }
         [Required(ErrorMessage = "Alamat tidak boleh kosong")]
         public string Alamat { get; set; }
         [MinLength(10, ErrorMessage = "No HP minimal 10 angka")]
         [MaxLength(13, ErrorMessage = "No HP minimal 13 angka")]
+        [Required(ErrorMessage = "No HP tidak boleh kosong")]
         public string NoHp { get; set; }
         [Required(ErrorMessage = "Gender tidak boleh kosong")]
         public int? IdGender { get; set; }
